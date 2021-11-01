@@ -17,6 +17,10 @@ const Routes = [
     component: lazy(() => import('../../views/SecondPage'))
   },
   {
+    path: '/brand',
+    component: lazy(() => import('../../views/products/brand'))
+  },
+  {
     path: '/login',
     component: lazy(() => import('../../views/Login')),
     layout: 'BlankLayout',
