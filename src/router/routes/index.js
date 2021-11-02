@@ -20,6 +20,11 @@ const Routes = [
     path: '/brand',
     component: lazy(() => import('../../views/products/brand'))
   },
+  
+  {
+    path: '/designation',
+    component: lazy(() => import('../../views/designations/designation'))
+  },
   {
     path: '/login',
     component: lazy(() => import('../../views/Login')),

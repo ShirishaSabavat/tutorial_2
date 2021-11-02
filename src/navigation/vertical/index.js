@@ -1,4 +1,4 @@
-import { Mail, Home } from 'react-feather'
+import { Box, PieChart, Circle, Mail, Home, FileText } from 'react-feather'
 
 export default [
   {
@@ -10,21 +10,35 @@ export default [
   {
     id: 'secondPage',
     title: 'Second Page',
-    icon: <Mail size={20} />,
+    icon: <FileText size={20} />,
     navLink: '/second-page'
   },
 
   {
     id: 'products',
     title: 'Products',
-    icon: <Mail size={20} />,
+    icon: <Box size={20} />,
     children:[
       
   {
     id: 'brand',
     title: 'Brand',
-    icon: <Mail size={20} />,
+    icon: <Circle size={20} />,
     navLink: '/brand'
+  }
+]
+  },
+  {
+    id: 'designations',
+    title: 'Designations',
+    icon: <PieChart size={20} />,
+    children:[
+      
+  {
+    id: 'designation',
+    title: 'Designation',
+    icon: <Circle size={20} />,
+    navLink: '/designation'
   }
 ]
   }

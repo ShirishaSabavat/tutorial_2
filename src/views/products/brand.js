@@ -14,18 +14,10 @@ const SecondPage = () => {
   const [centeredModal, setCenteredModal] = useState(false)
 
   return (
-    <div style={{
-      bordeStyle: "solid", 
-      borderColor: "blue",
-      borderWidth: "2px"
-    }} id="root" className="shadow p-2 bg-white border rounded">
-      <div style={{
-      bordeStyle: "solid", 
-      borderColor: "blue",
-      borderWidth: "2px"
-    }} className='demo-inline-spacing d-flex flex-row justify-content-end mb-2'>
-        <h5>Add your brands</h5>
-        <div className='vertically-centered-modal'>
+    <div id="root" className="shadow p-2 bg-white border rounded">
+    <h5>Add your Brand </h5>
+        <div className='demo-inline-spacing d-flex flex-row justify-content-end mb-2'>
+           <div className='vertically-centered-modal'>
           <Button.Ripple color='info' onClick={() => setCenteredModal(!centeredModal)}>
             <span>+</span> Add
           </Button.Ripple>
